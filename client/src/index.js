@@ -4,4 +4,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import { BrowserRouter as Router} from "react-router-dom";
+
+
+
+const rootlist = document.getElementById('root')
+
+ReactDOM.render(
+    <Router>
+    <App />
+    </Router>,
+    rootlist 
+    
+    );
